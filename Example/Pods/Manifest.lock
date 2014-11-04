@@ -1,0 +1,14 @@
+PODS:
+  - DMListener (0.1.0)
+
+DEPENDENCIES:
+  - DMListener (from `../`)
+
+EXTERNAL SOURCES:
+  DMListener:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DMListener: f2f90427b5daefa36b8020887c5f45d2007107c3
+
+COCOAPODS: 0.34.4
