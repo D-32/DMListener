@@ -51,4 +51,8 @@
     [_listeners removeObjectsInArray:discard];
 }
 
+- (NSString *)description {
+    return [_listeners description];
+}
+
 @end
