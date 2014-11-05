@@ -12,18 +12,13 @@
 @interface DMAppDelegate () <DMDemoModelListener>
 @end
 
-@implementation DMAppDelegate {
-
-}
+@implementation DMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     DMDemoModel* model = [[DMDemoModel alloc] init];
     [model addListener:self];
     [model refreshData];
-    
-    NSNumber* s = [NSNumber numberWithInt:32];
-    [model addListener:s];
     
     return YES;
 }
