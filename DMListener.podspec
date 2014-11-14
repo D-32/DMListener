@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DMListener"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Easily observe changes in objects. Like a delegate, just better."
   s.homepage         = "https://github.com/d-32/DMListener"
   s.license          = 'MIT'
