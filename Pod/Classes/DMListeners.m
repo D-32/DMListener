@@ -25,6 +25,20 @@
     [_listeners addObject:weakRef];
 }
 
+- (void)removeListener:(id)listener {
+    NSInteger toRemoveIndex = -1;
+    NSInteger i = 0;
+    for (DMWeakRef* ref in _listeners) {
+        if (ref.ref == listener) {
+            toRemoveIndex = i;
+        }
+        i++;
+    }
+    if (toRemoveIndex >= 0) {
+        [_listeners removeObjectAtIndex:toRemoveIndex];
+    }
+}
+
 - (void)notifyListeners:(NotifyBlock)notifyBlock {
     NSArray* copy = [NSArray arrayWithArray:_listeners];
     dispatch_async(dispatch_get_main_queue(), ^{

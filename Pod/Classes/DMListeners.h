@@ -24,6 +24,13 @@ typedef void(^NotifyBlock)(id obj);
 - (void)addListener:(id)listener;
 
 /**
+ *  Remove a listener
+ *
+ *  @param listener listener to remove
+ */
+- (void)removeListener:(id)listener;
+
+/**
  *  Notify all listeners. The notifyBlock will be called for each still allocated listener.
  *
  *  @param notifyBlock block that will be called for each listener
